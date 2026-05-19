@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas do Senai</title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites,web, frontend">
+    <meta name="author" content="Hebertt Rafael, heberttrafael4528@gmail.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Lellis Ito - Turma A</a></li>
+                <li><a href="#">Lellis Ito - Turma B</a></li>
+                <li><a href="#">Pinto do Amaral - Turma A</a></li>
+                <li><a href="#">Pinto do Amaral - Turma B</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <section>
+            <section>
+                <header>Lellis Ito - Turma A</header>
+                <article>
+                    <ul class="listaAlunos" id="alunosLellis_A">
+                        <li>Lara d Brito</li>
+                        <li>Laura Chelles</li>
+                        <li>Maria Eduarda</li>
+                        <li>Mariana Sales</li>
+                        <li>Mikael Fernandes</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos <mark><p id="qtdAlunosLellis_A">0</p></mark></h3>
+                </footer>
+            </section>
+
+            <section>
+                <header>Lellis Ito - Turma B</header>
+                <article>
+                    <ul class="listaAlunos" id="alunosLellis_B">
+                        <li>Rian Thiago</li>
+                        <li>Iran Nunes</li>
+                        <li>Pedro Davi</li>
+                        <li>João Pedro</li>
+                        <li>Luiz Eduardo</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos <mark><p id="qtdAlunosLellis_B">0</p></mark></h3>
+                </footer>
+            </section>
+
+            <section>
+                <header>Pinto do Amaral - Turma A</header>
+                <article>
+                    <ul class="listaAlunos" id="alunosPinto_A">
+                        <li>Joaquim Silva</li>
+                        <li>Lucas Silva</li>
+                        <li>Gabriel Souza</li>
+                        <li>Gustavo Costa</li>
+                        <li>Guilherme Santos</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos <mark><p id="qtdAlunosPinto_A">0</p></mark></h3>
+                </footer>
+            </section>
+
+            <section>
+                <header>Pinto do Amaral - Turma B</header>
+                <article>
+                    <ul class="listaAlunos" id="alunosPinto_B">
+                        <li>Ruan Souza</li>
+                        <li>Lais Chelles</li>
+                        <li>Maria Fonceca</li>
+                        <li>Gregório Queiroz</li>
+                        <li>Thiago Mendes</li>
+                    </ul>
+                </article>
+                <footer>
+                    <h3>Quantidade de Alunos <mark><p id="qtdAlunosPinto_B">0</p></mark></h3>
+                </footer>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <h3>Desenvolvido por: <mark><b> Mikael </b></mark></h3>
+    </footer>
+    <script>
+        function contarAlunosTurmas(listaAlunos, qtd){
+            const listaAlunos = document.getElementById(lista);
+            const Quantidade = listaAlunos.querySelectorAll("li").length;
+            document.getElementById(qtd).textContent = Quantidade;
+
+        }
+        contarAlunosTurmas('alunosLellis_A', 'qtdAlunosLellis_A');
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@import "reset.css";
+
+body {
+    background-color: #537253;
+}
+
+header {
+    background-color: #537253;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 20px;
+    background-color: aquamarine;
+    border: 1px solid #f1f1f1;
+}
+
+section {
+    background-color: aquamarine;
+}
+
+section section section {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 300px;
+    min-height: 300px;
+    border: 2px solid #000;
+    background-color: rgb(197, 221, 175);
+    box-sizing: border-box;
+}
+
+section section section footer {
+    background-color: rgb(186, 243, 189);
+}
